@@ -13,5 +13,5 @@ Practice basic Algorithms for find, filter and sort.
 * that takes a [handlebars template](https://www.npmjs.com/package/handlebars) and create a nicely formatted *itemized bill with totals and sub totals**. Add lines to the report that indicates when the calls for a cell phone provider starts and a row that displays the total call duration for each provider and a line at the bottom displaying the total call duration for all calls.
 
 **Note:**
-The results of the functions is parameters for the other functions.  
+The results of the functions are parameters for the other functions. The one functions data feed into the next function. It all starts from the CSV file.
 
