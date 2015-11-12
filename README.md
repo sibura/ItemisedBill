@@ -6,10 +6,10 @@ Practice basic Algorithms for find, filter and sort.
 
 * that can read an [Itemised cell phone bill](./ItemisedBill.csv) and **create a list of maps** (an object in JS). Each line in the file become a map/object.
 * that can return all the **phone calls for the specified provider**. It takes the list of phone number as a parameter.
-* that calculates **the total number of calls** made to numbers for each cellphone operator
 * that can calculate the **duration in seconds** for a call duration which is in the **format `00h00m00s`**
 * that can **order the calls** by ascending call duration
-* that can create **sub totals** for each **cell phone operator** and add it below each cellphone operator in the list
+* that calculates **the total number of calls** made to numbers for each cell phone provider.
+* that can create **sub-totals** for each **cell phone provider** and shows a list of the sub-totals by provider.
 * that takes a [handlebars template](https://www.npmjs.com/package/handlebars) and creates a nicely formatted **itemized bill with totals and sub-totals**. Add lines to the report that: indicate when the calls for a cell phone provider start; display the total call duration for each provider. Add a line at the bottom displaying the total call duration for all calls.
 
 **Note:**
