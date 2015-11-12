@@ -4,7 +4,7 @@ Practice basic Algorithms for find, filter and sort.
 
 **For each of the scenarios below create a function :**
 
-* that can read an [Itemised cell phone bill](./ItemisedBill.md) and **create a list of maps** (object in JS). Each line in the file become a map/object. 
+* that can read an [Itemised cell phone bill](./ItemisedBill.csv) and **create a list of maps** (an object in JS). Each line in the file become a map/object.
 * that can return all the **phone calls for the specified provider**. It takes the list of phone number as a parameter.
 * that calculates **the total number of calls** made to numbers for each cellphone operator
 * that can calculate the **duration in seconds** for a call duration which is in the **format `00h00m00s`**
