@@ -2,7 +2,7 @@
 
 Practice basic algorithms for find, filter and sort.
 
-**For each of the scenarios below create a function :**
+**For each of the scenarios below create a function using TDD :**
 
 1. that can read an [Itemised cell phone bill](./ItemisedBill.csv) and **create a list of maps** (an object in JS). Each line in the file become a map/object.
 * that can return all the **phone calls for the specified provider**. It takes the object version of the bill and a provider as parameters.
@@ -15,3 +15,5 @@ Practice basic algorithms for find, filter and sort.
 **Note:**
 
 The results of the functions are parameters for the other functions. One function feeds data into the next function. It all starts from the CSV file.
+
+Write your tests using mocha.
