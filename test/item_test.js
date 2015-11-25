@@ -8,21 +8,36 @@ describe('test the itemBills ', function(){
 		var items = new Items();
 		var provider = items.item("./ItemisedBill.csv");
 
-
-		var itemised = items.groupProvider(provider);
 		assert.equal(items.length);
-		console.log(provider)
+   });
 
+	it("should return the provdList specified provider MTN", function(){
 
-	});
-
-		it("should return the totallCalls specified provider", function(){
 		var items = new Items();
 		var provider = items.item("./ItemisedBill.csv");
 
-		var expectedProvider = {'MTN' : '1h05m00s', 'Vodacom' : '00h08m34s', 'CellC': '00h47m7s'};
-		var groupProvids = items.groupProvider(provider);
-		var Results = items.groupProvider(groupProvids);
-		assert.equal(expectedProvider);		
-	})
+		var lists = items.provdList(provider, "MTN");
+		// var results = {"MTN"};
+		assert.equal(lists.length, 48);
+		console.log(lists);
+
+	});
+
+	it("should return the specified provider", function(){
+
+		var items = new Items();
+		var provider = items.item("./ItemisedBill.csv");
+
+		var lists = items.provdList(provider, "MTN");
+		var totals = items.totalCalls(lists);
+		var results = {"MTN":16, "Vodacom":7, "CellC":11};
+		
+	
+		assert.equal(totals.length, 16);
+		console.log(totals + "..........totals");
+		// assert.deepEqual(results, totals);
+		// assert.equal(results,  {"MTN":16});
+		// assert.equal(results, {"Vodacom":7});
+		//console.log(results);
+	});
 });
