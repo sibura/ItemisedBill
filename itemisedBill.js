@@ -36,26 +36,27 @@ this.provdList = function(itemlist, provider){
 	var listprovider = [];
 
 	for(var i=0; i < itemlist.length; i++){
-		if(itemlist[i].provider == provider){
-			listprovider.push(itemlist[i].provider);
-			listprovider.push(itemlist[i].Number);
-			listprovider.push(itemlist[i].Duration);
+		var current_list = itemlist[i];
+
+		if(current_list.provider === provider){
+			listprovider.push(current_list);
 		}
 	}
 	console.log(listprovider + ".........List")
 	return listprovider;
  }
 
-this.totalCalls = function(listprovider, provider){
-		var tcalls = {};
-		var provider = provider;
-		for(var i =0; i < listprovider.length; i++){
-			if(provider == listprovider[i].provider){
-				tcalls.provider += listprovider[i].provider;
-				tcalls.total += listprovider[i].total;
-			}
-		}
-		console.log(tcalls);
-		return tcalls;
-	};
+// this.totalCalls = function(listprovider, provider){
+// 		var tcalls = {};
+// 		var provider = provider;
+// 		for(var i =0; i < listprovider.length; i++){
+// 			var current_calls = listprovider[i].provider;
+// 			if(tcalls.provider < current_calls){
+// 				tcalls.provider += listprovider[i].provider;
+// 				tcalls.total += listprovider[i].total;
+// 			}
+// 		}
+// 		console.log(tcalls);
+// 		return tcalls;
+// 	};
 };
